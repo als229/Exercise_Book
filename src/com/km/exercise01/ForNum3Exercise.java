@@ -34,7 +34,7 @@ public class ForNum3Exercise {
 					count--;
 					break;
 				}else if (str.charAt(i) != str.charAt(j) && j == i-1) { // 시바 이 식 이해하는데 1시간 걸렸다. 나는 j == i-1 을 안넣어서 계속 들어가서 aaaaaappppp이런식으로 나왔는데
-																		// j == i-1 이 마지막에 한번 넣어준다는 뜻인거 같다. 그래서 다 돌고 문제 없으면 마지막에 한번 넣어주고 끝낸다는 뜻!!!!!!!!!
+																		// j == i-1 이 마지막에 한번 넣어준다는 뜻. 그래서 다 돌고 문제 없으면 마지막에 한번 넣어주고 끝낸다는 뜻!!!!!!!!!
 					result += str.charAt(i) + " ";
 				}
 			}
