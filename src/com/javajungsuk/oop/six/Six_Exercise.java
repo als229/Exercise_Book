@@ -159,12 +159,113 @@ package com.javajungsuk.oop.six;
 
 
 //6-17
+//public class Six_Exercise {
+//	
+//	static int[] shuffle(int [] arr) {
+//		int tmp = 0;
+//		for(int i = 0; i < arr.length; i++) {
+//			int n = (int)(Math.random()*arr.length);
+//			
+//			tmp = arr[i];
+//			arr[i] = arr[n];
+//			arr[n] = tmp;
+//			
+//		}
+//		return arr;
+//	}
+//	
+//	public static void main(String[] args) {
+//		int [] original = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
+//		System.out.println(java.util.Arrays.toString(original));
+//		
+//		int [] result = shuffle(original);
+//		System.out.println(java.util.Arrays.toString(result));
+//		
+//	}
+//}
+
+// 6-19
+
+// 1. isPowerOn = !isPowerOn
+// 2.  if(voulme < MAX_VOLUME)volume += 1;
+// 3. if(volume > MIN_VOLUME) volume -= 1;
+// 4. if(channel == MAX_CHANNEL) channel = MIN_CHANNEL;
+//    else channel += 1;
+// 5. if(channel == MIN_CHANNEL) channel = MAX_CHANNEL;
+//    else channel -= 1;
+
+
+// 6- 20
+//public class Six_Exercise {
+//
+//	public static int max(int [] arr) {
+//		if(arr==null || arr.length == 0) return -9999999;
+//		int max = 0;
+//		for(int i = 0; i < arr.length; i++) {
+//			if(arr[i] > max ) max = arr [i];
+//		}
+//		return max;
+//	}
+//	
+//	public static void main(String[] args) {
+//		
+//		int[] data = {3, 2, 9, 4, 7};
+//		System.out.println(java.util.Arrays.toString(data));
+//		System.out.println("최대값 : " + max(data));
+//		System.out.println("최대값 : " + max(null));
+//		System.out.println("최대값 : " + max(new int[] {}));
+//	}
+//}
+
+
+//6-21
 public class Six_Exercise {
+
+	public static int abs(int value) {
+		int i = -1;
+		if(value < 0) value = value*i;
+		return value;
+	}
+
 	public static void main(String[] args) {
 		
+		int value = 5;
+		System.out.println(value + "의 절대값" + abs(value));
+		value = -10;
+		System.out.println(value + "의 절대값" + abs(value));
 		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
