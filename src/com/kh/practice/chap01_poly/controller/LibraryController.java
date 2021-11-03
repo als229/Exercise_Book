@@ -30,22 +30,27 @@ public class LibraryController {
 	}
 	public Book[] searchBook(String keyword) {
 		int count = 0;
-		Book[] searchBList = new Book[bList.length - count];
+		Book[] searchBList = new Book[bList.length];
+		
 		for(int i =0; i < bList.length; i++) {
 			if(bList[i].getTitle().contains(keyword)) {
-				searchBList[i] = bList[i];
+				searchBList[count] = new Book();
+				searchBList[count++] = bList[i];
 			}
-		}return searchBList;
+		}
+		return searchBList;
 	}
 	public int rentBook(int index) {
 		int result = 0;
-		for(int i =0; i< ; bList.length; i++) {
-		if(bList[i] ==) {
-			if(mem.getAge() < 19) {
-				
-			}
+		if(bList[index] instanceof AniBook && mem.getAge() <= ((AniBook)bList[index]).getAccessAge()) {
+			result =1;
 		}
+		
+		if(bList[index] instanceof CookBook && ((CookBook) bList[index]).isCoupon()) {
+			mem.setCouponCount(mem.getCouponCount()+1);
+			result = 2;
 		}
+		return result;
 	}
 	
 }

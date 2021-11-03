@@ -40,7 +40,7 @@ public class Book {
 	
 	@Override
 	public String toString() {
-		return "";
+		return "[ Book [title=" + title + ", author=" + author + ", publisher=" + publisher +"]";
 	}
 	
 	
